@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <title>Registration portal Pubg tounament </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<meta name="description" content="" />
+	
+
+	<meta name="keywords" content=""  />
+	
+	<meta name="author" content="Pak Authors" />
+    <meta charset="utf-8">
+
+
+<link rel="icon" href="favicon.ico" type="../image/x-icon" />
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    
+     <link  rel="stylesheet" href="../css/positivity.css"/>
+     <!-- Animation,   landing pages,  icomoon  -->
+    <link rel="stylesheet" href="../css/icomoon.css"/>
+ 
+   
+   
+ 
+<!-- Global site tag (gtag.js) - Google Analytics 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140391305-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140391305-1');
+</script> -->
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2506755496151393",
+    enable_page_level_ads: true
+  });
+</script>
+
+<style type="text/css">
+	.pubg-cover{
+		background-image: url(../pubg/pubg-cover.png);
+		background-size: cover;
+		background-position: center;
+		height: 700px;
+		min-width: 100%;
+		position: fixed;
+		z-index: -999;
+	}
+	.shade-blur{
+		 background: linear-gradient(rgba(255, 255, 255, 0),rgba(56, 56, 56, 0.8));
+	}
+    .bg-pg-dr{
+        background-color:rgba(56, 56, 56, 0.8);
+    }
+</style>
+   
+   
+    <script src="../js/jquery-3.3.1.min.js">
+    </script>
+      <script>
+         $(window).on('scroll',function(){
+         if($(window).scrollTop()){
+             $('nav').addClass('black');
+             
+         }
+        else{
+            $('nav').removeClass('black');
+        }
+    });
+    </script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#sub").click(function(){
+			
+			var sq_name = $("#sq_name").val();
+			var pubg_ids = $("#pubg-Ids").val();
+			var ph = $("#ph").val();
+			var ct = $("#city").val();
+
+	$.post("reg.php",{sq_n:sq_name, p_ids:pubg_ids, phone:ph, city:ct}, function(data){
+		 $("#result").html(data);
+	});
+
+	});
+		});
+	
+</script>
+
+<style type="text/css">
+	.entry{
+		background: none;
+		border:none;
+		border-bottom: 4px orange solid;
+		padding-left: 4px;
+		font-size: 25px;
+		margin-top: -20px;
+		color: yellow;
+
+	}
+
+#sub{
+	border:3px orange solid;
+	background: none;
+	padding: 6px 30px 6px 30px;
+	color: yellow;
+	font-style:italic;
+	font-size: 25px;
+	border-radius: 30px;
+}
+#sub:hover, #sub:active,#sub:focus{
+	background-color: rgba(46, 46, 46, 0.4);
+	color: orange;
+	transition: .3s;
+	box-shadow: 0px 0px 10px yellow;
+	border:3px solid yellow;
+	
+}
+
+	#form-box{
+		background-color: rgba(46, 46, 46, 0.8);
+		b
+	}
+
+</style>
+
+    </head>
+    
+    
+    
+    
+<body>
+
+
+
+    <section class="pubg-cover"> </section>
+
+
+   
+    <div class="container-fluid bg-dark header-top  d-md-block">
+    
+        
+   <!-------------------------NAVBAR START HERE------------------------------------>
+  
+    <nav style="" class="navbar navbar-expand-lg navbar-dark bg-black fixed-top nav-bdr">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand " href="#" style="font-family: 'Audiowide', cursive;color:lightgreen; " ><img src="../images/pak-authors-logo.png" alt="pak authors icon" style="border-radius: 25em;" width="40px" class=" ani-logo " title="pak authors" >Pak Authors</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active 
+        ">
+        <a class="nav-link icon-home active-nav  " style="font-size: 25px;" href="#"><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ml-1">
+      <a class="nav-link  " href="blog.html">BLOGS</a>
+      </li>
+       <!--  <li class="nav-item ml-1">
+        <a class="nav-link  " href="#">Books Summary</a>
+      </li>  -->
+   
+         <li class="nav-item ml-1">
+        <a class="nav-link  " href="#contact">Contact</a>
+      </li>
+        <li class="nav-item ml-1">
+        <a class="nav-link  " href="../about/about.html">About</a>
+      </li>
+       
+    </ul>
+   
+  </div>
+  </nav>
+ </div>
+
+
+
+
+
+<img src="../images/cover.jpg" width="100%">
+
+<div class="container-fluid" id="form-box">
+	<div class="row pb-5" style=""  >
+<a href="../pubg.html" class="btn btn-warning btn-lg" style="margin-top: -50px;">Bcak</a>
+
+
+<div class="col-lg-12 bg-white" id="result" ></div>
+
+
+
+		<div class="col-lg-4">
+			<label class="mt-5" style="color: orange; font-size: 20px;" >Squad Name:</label>
+			<input type="text" class="entry" id="sq_name" placeholder="squad-name" name="squad-name">
+		</div>
+
+
+		<div class="col-lg-4">
+			<label class="mt-5" style="color: orange; font-size: 20px;" >Pubg-ids:</label>
+<input type="text" class="entry" id="pubg-Ids" required="" placeholder="(1st-id), (2nd-id).. .." value=""  >
+			
+		</div>
+
+
+		<div class="col-lg-4">
+			<label class="mt-5" style="color: orange; font-size: 20px;" >Phone No:</label>
+<input type="textarea" class="entry" id="ph" placeholder="Phone">
+			
+		</div>
+
+
+		<div class="col-lg-4">
+			<label class="mt-5" style="color: orange; font-size: 20px;" >City:</label>
+<input type="text" class="entry"  id="city" name="" placeholder="city" >	
+		</div>
+
+		<div class="col-lg-4">
+<label  style="color: orange;" >I agreed with all rules.</label>
+<input type="checkbox" class="mt-5" name="">
+
+			<input type="Submit" class=" mt-5 float-right" id="sub" name="submit" value="Submit">
+		</div>
+
+
+	</div>
+</div>
+
+
+<div id="result"  ></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript" lang="javascript" src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../js/jquery-3.3.1.min.js">
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script type="text/javascript" lang="javascript" src="js/positivity.js" ></script>
+     <script type="text/javascript" lang="javascript" src="js/bootstrap.min.js"></script>
+   
+  </body>
+  </html>

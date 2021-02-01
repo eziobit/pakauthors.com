@@ -1,0 +1,210 @@
+ de renouvellement. Plage de 15 à 43200 minutes
+   KillProcessOnPort - Force l'ouverture du port KMS s'il est présent.
+                -Log - Active le fichier journal.
+		 -IP - Affiche les adresses IP des ordinateurs clients.         
+        -Hwid <HWID> - Valeur de hachage du hardware de la machine.
+		   
+                          —————————————————————————————————
+Le programme nécessite .NET Framework 4.5
+Pour que le programme fonctionne correctement, il est nécessaire d'ajouter le fichier KMSSS.exe 
+dans les exclusions de votre anti-virus!. 
+Ou de désactiver votre anti-virus au moment de l'activation.
+
+Quelque fois le service KMS n'est pas installé correctement selon différentes raisons.
+Vous devez alors lancer 2 à 3 fois "Supprimer le service KMS" et redémarrer l'ordinateur.
+Lors de l'utilisation du programme il est conseillé de cocher l'option "sauvegarde des paramètres 
+dans le dossier programme". Dans ce cas, le fichier de configuration sera stocké dans le dossier 
+du programme et non dans C:\Utilisateurs\Nom_Utilisateur\AppData\Local\MSfree Inc.
+
+                          —————————————————————————————————
+Les précédente versions de KMS Log Analyzer.xlsm sont incompatibles avec KMS Server Service v1.1.7
+Pour la sauvegarde, les anciens enregistrements devront être transférés dans KMS Log Analyzer par 
+copier-coller.
+
+                              "Je ne suis pas activé !!!"
+                          —————————————————————————————————
+Vous disposez peut-ętre d'un produit qui n'est pas une version VL, non destiné ŕ l'activation par
+le service KMS, (Windows 7 Intégral n'est pas activé), ou votre antivirus bloque l'activation. 
+Faire ce qui suit: sur l'onglet "Systčme", cliquez sur l'icône bleue "Service KMS" dans la fenętre
+qui apparaît, retirez la coche. Puis ajouter un dossier dans les exceptions de votre antivirus.
+ 
+
+                          —————————————————————————————————
+Remerciements, à mikmik38, sans son travail ce programme n'aurait pas pu être conçu, à Hotbird64, 
+pour son client KMS, à Evgeny972 et les personnes du forum.ru-board.com, pour l'assitance et les 
+tests des multiples versions du programme.
+                                                             
+
+																 
+Journal des modifications :
+v1.3.8
+ -Corrigé: Image des boutons lorsque la police d'affichage est augmentée ŕ 125%. 
+ -Ajout "Affichez la date d'expiration de la licence (180 jours 0 heures 0 minutes)". 
+ -Ajout dans "Autres utilitaires" restaurer les fichiers systčme ŕ partir du disque avec 
+  la distribution de votre    version de Windows.
+ 
+
+v1.3.7
+ -Fixed: Encoding readme_ru.txt.
+ -Added readme.txt in the Bulgarian language.
+ -Utility to save activation MSActBackUp v1.0.8.
+
+
+v1.3.6
+ -Mise à jour du programme ProduKey v1.70 vers v1.80.
+ -Corrigé: Paramétrage des clés Office 2016.
+ -Corrigé: La tâche dans le planificateur démarre tous les 10 jours.
+
+v1.3.5
+ -Mise à jour de ProduKey v1.66 vers v1.70.
+ -Nouveau pilote TAP pour supporter Windows 10. Un adresse IP aléatoire est utilisée quand l'activation échoue 
+  et la boite de contrôle est effacée.
+ -Recompilation du service KMS. Les antivirus ne le détecteront comme une menace/faux positif.
+ -Inclus l'utilitaire MSActBackUp.
+ -Ajout des clés pour Windows 10 et Office 2016.
+ -Conversion de Office 2016 RETAIL en VL.
+ -Si Office n'est pas installé, le bouton "Activer Office" est désactiver.
+ -Dans l'onglet "A propos de" il y a un lien hypertexte vers mes programmes.
+ -Ajout du programme "Afficher ou cacher les mises à jour" pour Windows 10
+
+v1.3.4
+-Modifications dans le programme pour assurer la compatibilité avec des logiciels antivirus.
+
+v1.3.3
+ -Lors d'une tentative d'activation de Office 2013 RETAIL, le programme convertit le canal de 
+licence de Office 2013 OfficeProPlus, VisioPro, ProjectPro en client KMS sur Windows 7, 8, 8.1, 10.
+
+v1.3.2
+ -Modifications dans l'interface, compatibilité avec Windows Technical Preview.
+ -Disponibilité de l'interface en français, remerciements à Coleo.
+ 
+v1.3.1.b4
+ -Ajout d'un script de heos(ru-board.com).
+  Ce script recherche les mises à jour installées et obsolètes de Office 2010/2013 et permet de 
+  les supprimer.
+
+v1.3.1.b3
+ -Ajout de la fonction qui permet de basculer entre les différentes langues d'affichage .
+ 
+v1.3.1.b2
+ -Correction d'un bogue lors de la création d'une tâche planifiée en ligne de commande.
+
+v1.3.1.b1
+ -Ajout du support pour l'activation de Windows Technical Preview, Windows 10.
+
+v1.3.0
+ -Ajout du support pour activer les éditions OEM : "Windows 8.1 Single Language avec Bing",
+  "Windows 8.1 avec Bing" et "Windows 8.1 Pro pour Education"
+ 
+v1.2.8
+ -Le programme ProduKey a été mis à jour de la version v1.65 à la version v1.66.
+ -Remplacement de SppPatcher dans la méthode Hook SECO Injector.
+ -Suppression d'une erreur qui affiche "Intervalle d'activation" dans ES, VI, UA.
+ 
+v1.2.7
+ -KMS Log Analizer.xlsm est intégré afin de visualiser le journal dans le programme d'activation.
+ -L'ordinateur devrait avoir une application d'installér pour visualiser les fichiers .xlms(MS Excel).
+ -Adaptation du programme pour s'adapter au nouveau format de fichier journal effectué par Bort_Nick,
+  forum.ru-board.com.
+ -Nouveau Service KMS Server(KMSSS.exe) v1.1.7.
+ -Expansion de la liste des systèmes afin de convertir les éditions.
+ 
+v1.2.6.1
+ -Modification de la façon dont le bouton "Information programme" fonctionne dans l'onglet "A propos de".
+ -Correction du dysfontionnement du bouton "Obtenir ePID et Hwid KMS-Service".
+ 
+v1.2.6
+ -Correction d'un problème lors de l'installation de la clé après l'exécution de la commande "slmgr.vbs /upk".
+ -Afin d'éviter leur détection par un antivirus, les fichiers pilotes sont protégés par un mot de passe. 
+  Cependant, il est impératif d'ajouter les dossiers suivants dans les exclusions de votre antivirus:
+  %SYSTEMDRIVE%\ProgramData\KMSAuto\*.* 
+  %SYSTEMDRIVE%\ProgramData\KMSAutoS\*.* 
+  %TEMP%\KMSAuto\*.*
+  %TEMP%\PDK\*.*
+  
+v1.2.5
+ -Lorsque l'activation échoue un message est affiché et une nouvelle tentative est effectuée pour paramétrer 
+  une GVLK en force.
+ -Ajout d'une option pour désactiver le planificateur de tâches qui contrôle les actions de l'utilisateur.
+ 
+v1.2.4.1
+ -Correction d'un bogue lors de la création d'une tâche planifiée en ligne de commande.
+
+v1.2.4
+ -L'activation en mode Auto démarre avec la méthode Windivert.
+ -Dans la méthode TAP l'adaptateur TAP adapter n'est pas réinstallé.
+ 
+v1.2.3
+ -Les fonctions d'activation sont optimisées pour Windows et Office.
+ -Correction de bogues mineurs.
+ -Modification de l'onglet "Utilitaires". Ajout de "KMS Client par Hotbird64"
+ -Nouveau KMSSS.exe supportant l'installation de Hwid KMS-Server.
+
+v1.2.2
+ -Correction de la date et de l'heure affichés en format hexadécimal dans le fichier journal. 
+ 
+v1.2.1
+ -Ajout de l'utilisation de ShowHideControls miXOnIN. Pour convertir les éditions. 
+ -En mode Professionnel, dans l'onglet avancé, le bouton "Convertir Office RETAIL en VL". 
+  fonctionne sous Windows 8-8.1, mais pas sous Windows 7!.
+ -Nouveau KMSSS.exe supportant l'installation de Hwid KMS-Server.
+  
+v1.2.0
+ -Modification de l'onglet "Paramètres".
+ 
+v1.1.9.b1
+ -Mise à jour du programme ProduKey de la version v1.62 vers la version v1.65
+ -Ajout du choix des intervalles d'activation de 10 et 20 jours.
+ -Installation de la clé GVLK dans l'onglet "Utilitaires", fonctionne sous slmgr.vbs.
+ -Modification de la fonction de paramétrage des clés pour "Produit Non Supporté" (rapport WMI OS).
+ -Ajout du programme KMS Log Analyzer, afin de visualiser et conserver plus facilement les informations 
+  du fichier journal de KMS-Service. 
+  L'ordinateur doit avoir une application installée pour gérer ces fichiers .xlsm (MS Excel). Pas encore prêt!
+
+v1.1.7 ÷ v1.1.8
+ -Quelques modifications dans l'interface. Ajout d'un lien vers une vidéo.
+ -En mode "Auto" le programme recherche une solution avec une adresse IP correcte.
+ -Correction d'un bogue relatif à l'impossibilité de supprimer les fichiers "Injector by deagles".
+  Le programme peut se figer avec le message "Installation Hook, Injector by deagles"
+ -Les fonctions d'activation ont été optimisées pour Windows et Office.
+ - Le bouton "Réinitialisation du système non valide" a été ajouté dans l'onglet "Utilitaires".
+  Lire attentivement le message lors de son affichage lorsque vous cliquez sur le bouton !
+
+v1.1.6
+ -Ajout de la possibilité de réinitialiser le programme aux valeurs par défaut.
+ -Nouveaux containers pour les modules. Le dépaquetages des modules et des pilotes est plus rapide.
+ -Le planificateur de tâches créé les tâches sous le nom d' Administrateur.
+ -La suppression des adresses de KMS Server fonctionne correctement.
+ -Correction des bogues mineurs.
+  *** Bonne Année 2014 ! ***
+
+v1.1.4
+ -Les paramètres du programme peuvent être sauvegardés dans un dossier contenant le programme.
+ -Tous les modules du programme peuvent fonctionner à partir de ProgramData ou du dossier contenant le programme.
+ -Coorection de bogues mineurs.
+
+v1.1.2.b8
+ -Le programme ProduKey est intégré dans le fichier exécutable.
+
+v1.1.2.b7
+ -Correction d'un bogue pour accéder au dossier.
+
+v1.1.2.b6
+ -Correction d'un bogue dans le planificateur.
+
+v1.1.2.b4
+ -En mode Auto, vous pouvez désactiver n'importe quelle méthode d'activation.
+ 
+v1.1.2.b3 
+ -La méthode Hook utilise un injecteur SECO modifié. Fonctionne lors de l'activation, lors des intervalles de 
+  renouvèlement.  
+  et paramètre son propre ePID.
+ v1.1.2b2
+ -Option pour se connecter à KMS server où le mode Hook fonctione sans remplacer les fichiers.
+ -Ajout d'un option dans le planificateur de tâches afin de créer une tâche dans ProgramData\KMSAutoS.
+
+v1.1.1
+ -Ajout d'une méthode d'activation avec subsitution temporaire des fichiers 8.1.
+
+v1.0.9.1
+ -Eliminatio
